@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literal</title>
+</head>
+<body>
+    <script>
+        // ES5
+        function setFullName(firstName,lastName){
+            return {
+                firstName: firstName,
+                lastName: lastName
+            }
+        }
+        console.log(setFullName("Rizky Puji", "Raharja"))
+
+        // ES6
+        function setAddress(regency, country) {
+            return {
+                regency,
+                country
+            }
+        }
+        console.log(setAddress("Jawa Barat", "Indonesia"))
+    </script>
+</body>
+</html>
