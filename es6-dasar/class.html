@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Member {
+            constructor(username, type, reff){
+                this.username = username
+                this.type = type,
+                this.reff = reff
+            }
+
+            register() {
+                console.log(`${this.username} registered`)
+            }
+
+            countMember(type) {
+                console.log(`500 members ${type} reff by ${this.username}`)
+            }
+        }
+
+        let member = new Member("rizkypujiraharja", "gold")
+        member.register()
+    </script>
+</body>
+</html>
