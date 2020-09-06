@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest & Spread</title>
+</head>
+<body>
+    <script>
+        let user = ["Rizky Puji Raharja", "Sumedang"];
+        const getUser = (name, address) => {
+            console.log(`${name} from ${address}`)
+        }
+        getUser(...user)
+
+
+
+        const getUserAgain = (...user) => {
+            console.log(user.join(', '))
+        }
+        getUserAgain("Rizky Puji Raharja", "Sumedang")
+
+    </script>
+</body>
+</html>
