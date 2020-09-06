@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        let categories = ["Horror", "Action", "Drama", "Sci-Fi"]
+
+        categories.forEach(function(category){
+            console.log(category)
+        })
+
+        console.log("----------------------")
+
+        categories.forEach((category) => {
+            console.log(category)
+        })
+
+        console.log("----------------------")
+        // Jika hanya 1 params, paramsnya gaperlu pake kurung
+        categories.forEach(category => {
+            console.log(category)
+        })
+
+        console.log("----------------------")
+        // Jika hanya 1 statement kodingan gaperlu pake kurung kurawal
+        categories.forEach(category => console.log(category))
+
+        console.log("----------------------")
+        // Tidak perlu return ketika menggunakan arror function dengan 1 statement
+        let categoriesIndex = categories.map((category, index) => `${index} ${category}`)
+        console.log(categoriesIndex)
+
+        let post = {
+            title: "First Post",
+            categories: ["Programming", "JS", "ES6"],
+            getCategories() {
+                this.categories.forEach(function (category) {
+                    console.log(this)
+                })
+            }
+        }
+        post.getCategories()
+
+        let product = {
+            title: "Larabook",
+            categories: ["Programming", "Laravel"],
+            getCategories() {
+                this.categories.forEach((category) => {
+                    console.log(this)
+                })
+            }
+        }
+        product.getCategories()
+
+    </script>
+</body>
+</html>
