@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literal</title>
+</head>
+<body>
+    <script>
+        let username = 'rizkypujiraharja'
+        let time = 'sore'
+
+        const showGreeting = (string, username, time) => {
+            console.log(string)
+            console.log(username)
+            console.log(time)
+        }
+
+        showGreeting`Hallo ${username}, Selamat ${time}`
+    </script>
+</body>
+</html>
