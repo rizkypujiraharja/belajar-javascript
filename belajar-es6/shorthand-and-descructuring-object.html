@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand & Destructuring Object</title>
+</head>
+<body>
+    <script>
+        // Shorthand
+        let username = 'rizkypujiraharja'
+        let age = 23
+        const getHobbies = () => {
+            return ["Programming", "Gamming"]
+        }
+
+        let profile = {
+            username, age, getHobbies, address:"Cimanggung"
+        }
+
+        console.log(profile)
+
+
+        // Destructuing
+        let post = {
+            title: "Shorthand & Destructuring Object",
+            categories: ["Programming", "Javascript"],
+            content: "Lorem ipsum dolor sit amet"
+        }
+
+        let {title : postTitle, categories, content} = post
+
+        console.log(postTitle)
+
+        let [firstCategory, secondCategory] = categories
+        console.log(firstCategory)
+        console.log(secondCategory)
+
+    </script>
+</body>
+</html>
