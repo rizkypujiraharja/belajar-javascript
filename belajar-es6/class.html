@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Member {
+            constructor(name, age){
+                this.name = name
+                this.age = age
+            }
+
+            getName(){
+                return this.name
+            }
+
+            setName(name){
+                this.name = name
+            }
+
+            setAge(age){
+                this.age = age
+            }
+        }
+
+        let member = new Member("Rizky Puji Raharja", 23)
+        member.setName("Rizky Febian")
+        console.log(member)
+    </script>
+</body>
+</html>
